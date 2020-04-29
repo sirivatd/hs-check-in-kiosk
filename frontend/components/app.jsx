@@ -1,26 +1,29 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import {
   Route,
-  Redirect,
   Switch,
-  Link,
-  HashRouter
+  Link
 } from 'react-router-dom';
+
+import CheckinFormContainer from './checkin_form/checkin_form_container';
+import CheckinListContainer from './checkin_list/checkin_list_container';
 
 const App = () => (
   <div>
     <header>
-      <Link to="/" className="header-link">
-        <h1>Handshake Check-in Kiosk</h1>
+      <h1>Handshake Check-in Kiosk</h1>
+
+      <Link to="/checkins/new" className="header-link">
+        <h2>New Check-in</h2>
+      </Link>
+      <Link to="/checkins" className="header-link">
+        <h2>Check-in List</h2>
       </Link>
     </header>
     <Switch>
-      {/* <AuthRoute exact path="/login" component={LogInFormContainer} />
-      <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-      <ProtectedRoute exact path="/benches/new" component={BenchFormContainer} />
-      <Route path="/benches/:benchId" component={BenchShowContainer} />
-      <Route exact path="/" component={SearchContainer} /> */}
+      
+      <Route path="/checkins/new" component={CheckinFormContainer} />
+      <Route exact path="/checkins" component={CheckinListContainer} />
     </Switch>
   </div>
 );
