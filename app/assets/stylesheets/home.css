@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(31, 80, 119);
+}
+
+.home-container {
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.home-image-container {
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgb(26, 104, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-text-container {
+  width: 100%;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+}
+
+.handshake-logo-icon {
+  width: 150px;
+  border-radius: 10px;
+}
