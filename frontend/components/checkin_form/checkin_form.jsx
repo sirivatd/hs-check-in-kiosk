@@ -50,34 +50,55 @@ class CheckinForm extends React.Component {
     return (
       <div className="checkin-form-container">
         <div className="new-checkin-form">
-          <h3 className="new-checkin-title">New Checkin</h3>
+          <h2 className="new-checkin-title">Welcome to the kiosk!</h2>
+          <h3 className="subtitle-text">Please fill in the following info to check-in.</h3>
 
           <form onSubmit={this.handleSubmit}>
-              <label className="checkin-field">First Name</label>
+            <div className="form-input-container">
+              <div className="form-input-section">
+              <label className="checkin-label">First Name</label>
+              <br />
               <input
                 type="text"
                 value={firstName}
                 onChange={this.update('firstName')}
                 className="checkin-field"
               />
+            </div>
+            </div>
+            <br />
+            <div className="form-input-container">
+            <div className="form-input-section">
 
-              <label className="checkin-field">Last Name</label>
+              <label className="checkin-label">Last Name</label>
+              <br />
               <input
                 type="text"
                 value={lastName}
                 onChange={this.update('lastName')}
                 className="checkin-field"
               />
+            </div>
+            </div>
+            <br />
+            <div className="form-input-container">
+            <div className="form-input-section">
 
-              <label className="checkin-field">Email Address</label>
+              <label className="checkin-label">Email Address</label>
+              <br />
               <input
                 type="text"
                 value={emailAddress}
                 onChange={this.update('emailAddress')}
                 className="checkin-field"
               />
-
-              <label className="checkin-field">Major</label>
+            </div>
+            </div>
+            <br />
+            <div className="form-input-container">
+            <div className="form-input-section">
+              <label className="checkin-label">Major</label>
+              <br />
               <select
                 value={major}
                 onChange={this.update('major')}
@@ -85,24 +106,19 @@ class CheckinForm extends React.Component {
               >
                 {majors.map((major) => <option key={major.name} value={major.name}>{major.name}</option>)}
               </select>
-
+            </div>
+            </div>
+            <br />
+            <div className="form-input-container">
               <div className="button-holder">
                 <input
                   type="submit"
                   value="Check-in"
-                  className="new-checkin-buttton"
+                  className="new-checkin-button"
                 />
               </div>
+            </div>
           </form>
-
-          <div className="button-holder">
-            <button
-              className="cancel-button"
-              onClick={this.navigateToHome}
-              >
-                Go back
-              </button>
-          </div>
         </div>
       </div>
     )
