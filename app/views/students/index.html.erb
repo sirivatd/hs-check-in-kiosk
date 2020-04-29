@@ -1,0 +1,9 @@
+<h1>Student Check-ins</h1>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= student.first_name %></li>
+  <% end %>
+</ul>
+
+<a href="<%= new_student_url %>">New Check-in</a>

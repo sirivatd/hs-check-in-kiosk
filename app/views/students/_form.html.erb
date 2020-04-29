@@ -1,0 +1,27 @@
+<form action="<%= students_url %>" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="hidden" name=":post" value="<%= :post %>">
+
+  <label for="first_name">First name</label>
+  <input
+    type="text"
+    name="student[first_name]"
+    id="student_first_name"
+  >
+
+  <label for="last_name">Last name</label>
+  <input
+    type="text"
+    name="student[last_name]"
+    id="student_last_name"
+  >
+
+  <label for="student_email_address">Email address</label>
+  <input
+    type="text"
+    name="student[email_address]"
+    id="student_email_address"
+  >
+
+  <input type="submit" value="Check in">
+  </form>
