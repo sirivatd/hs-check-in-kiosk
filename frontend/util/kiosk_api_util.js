@@ -15,3 +15,9 @@ export const createStudent = student => {
   });
 };
 
+export const fetchMajors = () => {
+  return $.ajax({
+    url: `https://hs-check-in-kiosk-api.herokuapp.com/api/majors`,
+    method: "GET"
+  });
+};

@@ -2,7 +2,6 @@ import * as APIUtil from '../util/kiosk_api_util';
 
 export const RECEIVE_CHECKINS = 'RECEIVE_CHECKINS';
 
-
 export const receiveCheckins = checkins => {
   return {
     type: RECEIVE_CHECKINS,

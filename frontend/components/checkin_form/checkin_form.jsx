@@ -16,6 +16,10 @@ class CheckinForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchMajors();
+  }
+
   navigateToHome() {
     this.props.history.push('/');
   }
@@ -40,7 +44,8 @@ class CheckinForm extends React.Component {
   }
 
   render() {
-    const { school, firstName, lastName, emailAddress, major, majorOptions, schoolOptions  } = this.state;
+    const { school, firstName, lastName, emailAddress, major } = this.state;
+    const { majors } = this.props;
     
     return (
       <div className="checkin-form-container">
@@ -48,14 +53,6 @@ class CheckinForm extends React.Component {
           <h3 className="new-checkin-title">New Checkin</h3>
 
           <form onSubmit={this.handleSubmit}>
-            <label className="checkin-field">School</label>
-            <input
-              type="text"
-              value={school}
-              onChange={this.update('school')}
-              className="checkin-field"
-              />
-
               <label className="checkin-field">First Name</label>
               <input
                 type="text"
@@ -81,12 +78,13 @@ class CheckinForm extends React.Component {
               />
 
               <label className="checkin-field">Major</label>
-              <input
-                type="text"
+              <select
                 value={major}
                 onChange={this.update('major')}
                 className="checkin-field"
-              />
+              >
+                {majors.map((major) => <option key={major.name} value={major.name}>{major.name}</option>)}
+              </select>
 
               <div className="button-holder">
                 <input
