@@ -1,5 +1,5 @@
 .checkin-list-container {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Avenir';
   text-align: center;
   background-color: white;
   width: 90%;
@@ -21,4 +21,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#checkins {
+  text-align: center;
+  font-family: 'Avenir';
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#checkins td, #checkins th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  height: 35px;
+  font-size: 21px;
+}
+
+#checkins tr:nth-child(even){background-color: #f2f2f2;}
+
+#checkins tr:hover {background-color: #ddd;}
+
+#checkins th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(26, 104, 214);
+  color: white;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Avenir';
 }

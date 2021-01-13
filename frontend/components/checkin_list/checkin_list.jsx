@@ -10,18 +10,39 @@ class CheckinList extends React.Component {
     this.props.fetchCheckins();
   }
 
-  render() {
-    const { checkins } = this.props;
+  renderTableData() {
+    const { checkins } = this.props
+    return checkins.map((checkin, index) => {
+      const { first_name, last_name, email_address, major } = checkin
+      return (
+        <tr key={index}>
+          <td>{first_name}</td>
+          <td>{last_name}</td>
+          <td>{email_address}</td>
+          <td>{major}</td>
+        </tr>
+      )
+    })
+  }
 
+  renderTableHeader() {
+    let headers = ["First name", "Last name", "Email address", "Major"]
+    return headers.map((key, index) => {
+       return <th key={index}>{key.toUpperCase()}</th>
+    })
+ }
+
+  render() {
     return (
       <div className="checkin-list-container">
         <div className="checkin-list-table-container">
-         <ul>{checkins.map((checkin) =>
-            <li className="checkin-list-row">
-              {checkin.first_name}, {checkin.last_name}, {checkin.email_address}, {checkin.major}
-            </li>
-          )}
-          </ul>
+        <h1 id="title">Check In List</h1>
+          <table id="checkins">
+            <tbody>
+              <tr>{this.renderTableHeader()}</tr>
+              {this.renderTableData()}
+            </tbody>
+          </table>
         </div>
       </div>
     )

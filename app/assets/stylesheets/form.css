@@ -1,26 +1,29 @@
 .checkin-form-container {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Avenir';
   text-align: center;
   background-color: white;
-  width: 90%;
+  width: 30%;
   margin: auto;
-  height: 55vh;
+  height: 75vh;
   border-radius: 10px;
 }
 
 .new-checkin-title {
   padding-top: 25px;
+  color: rgb(77, 77, 77);
 }
 
 .subtitle-text {
   color: gray;
+  margin-bottom: 40px;
 }
 
 .form-input-section {
-  width: 60%;
+  width: 75%;
   margin: auto;
   text-align: left;
   font-size: 20px;
+  font-family: 'Avenir';
 }
 
 .checkin-field {
@@ -28,8 +31,14 @@
   height: 30px;
   border-radius: 5px;
   margin-top: 15px;
-  background-color: rgb(31, 80, 119);
-  color: white;
+  background-color: rgb(230, 230, 230);
+  color: rgb(77, 77, 77);
+  border-color: lightgray;
+  font-family: 'Avenir';
+}
+
+#major-selection {
+  width: 102%;
 }
 
 .new-checkin-button {
@@ -42,6 +51,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width: 50%;
+  border-radius: 5px;
+  font-family: 'Avenir';
 }
 
 

@@ -20,8 +20,8 @@ class CheckinForm extends React.Component {
     this.props.fetchMajors();
   }
 
-  navigateToHome() {
-    this.props.history.push('/');
+  navigateToCheckinsList() {
+    this.props.history.push('/checkins');
   }
 
   update(property) {
@@ -40,7 +40,7 @@ class CheckinForm extends React.Component {
     formData.append('student[major]', this.state.major)
 
     this.props.createStudent(formData);
-    this.navigateToHome();
+    this.navigateToCheckinsList();
   }
 
   render() {
@@ -103,6 +103,7 @@ class CheckinForm extends React.Component {
                 value={major}
                 onChange={this.update('major')}
                 className="checkin-field"
+                id="major-selection"
               >
                 {majors.map((major) => <option key={major.name} value={major.name}>{major.name}</option>)}
               </select>
