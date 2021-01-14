@@ -4825,3 +4825,368 @@ Processing by Api::StudentsController#index as JSON
 Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 0.6ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "students"[0m
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (1.6ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 1]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2021-01-13 13:29:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/don/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 794ms (Views: 787.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:29:10 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.5ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:29:34 -0500
+Started GET "/api/students" for ::1 at 2021-01-13 13:29:34 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Don", "last_name"=>"Sirivat", "email_address"=>"don@joinhandshake.com", "major"=>"Software Engineering"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Processing by Api::StudentsController#index as JSON
+  [1m[36mStudent Create (0.9ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Don"], ["last_name", "Sirivat"], ["email_address", "don@joinhandshake.com"], ["created_at", "2021-01-13 18:29:34.077259"], ["updated_at", "2021-01-13 18:29:34.077259"], ["school", ""], ["major", "Software Engineering"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 27ms (ActiveRecord: 2.7ms)
+
+
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.9ms)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:29:49 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Tobias", "last_name"=>"Harris", "email_address"=>"tdawg@gmail.com", "major"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (1.1ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tobias"], ["last_name", "Harris"], ["email_address", "tdawg@gmail.com"], ["created_at", "2021-01-13 18:29:49.546732"], ["updated_at", "2021-01-13 18:29:49.546732"], ["school", ""], ["major", ""]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Started GET "/api/students" for ::1 at 2021-01-13 13:29:49 -0500
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 8ms (ActiveRecord: 2.6ms)
+
+
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.8ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:29:52 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.1ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT  "students".* FROM "students" ORDER BY "students"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStudent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/students" for ::1 at 2021-01-13 13:30:31 -0500
+Started POST "/api/students" for ::1 at 2021-01-13 13:30:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/don/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/don/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::StudentsController#index as JSON
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Tobias", "last_name"=>"Harris", "email_address"=>"tdawg@gmail.com", "major"=>"Business Analytics"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tobias"], ["last_name", "Harris"], ["email_address", "tdawg@gmail.com"], ["created_at", "2021-01-13 18:30:32.075981"], ["updated_at", "2021-01-13 18:30:32.075981"], ["school", ""], ["major", "Business Analytics"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 20ms (ActiveRecord: 2.3ms)
+
+
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.3ms)
+Completed 200 OK in 39ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:30:46 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Rex", "last_name"=>"Ruthor", "email_address"=>"rex@miami.edu", "major"=>"Jazz Studies"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (1.1ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rex"], ["last_name", "Ruthor"], ["email_address", "rex@miami.edu"], ["created_at", "2021-01-13 18:30:46.041133"], ["updated_at", "2021-01-13 18:30:46.041133"], ["school", ""], ["major", "Jazz Studies"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:30:46 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.6ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:31:03 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Carmen", "last_name"=>"Sandiego", "email_address"=>"carmen@nyu.edu", "major"=>"Interior Design"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.8ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Carmen"], ["last_name", "Sandiego"], ["email_address", "carmen@nyu.edu"], ["created_at", "2021-01-13 18:31:03.324700"], ["updated_at", "2021-01-13 18:31:03.324700"], ["school", ""], ["major", "Interior Design"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:31:03 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.4ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:31:23 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Reyna", "last_name"=>"Dort", "email_address"=>"reyna@tcu.edu", "major"=>"Hispanic Literatures"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.9ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Reyna"], ["last_name", "Dort"], ["email_address", "reyna@tcu.edu"], ["created_at", "2021-01-13 18:31:23.858672"], ["updated_at", "2021-01-13 18:31:23.858672"], ["school", ""], ["major", "Hispanic Literatures"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 7ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:31:23 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.1ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:31:46 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Dhar", "last_name"=>"Mann", "email_address"=>"dhar@stanford.edu", "major"=>"Art History"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dhar"], ["last_name", "Mann"], ["email_address", "dhar@stanford.edu"], ["created_at", "2021-01-13 18:31:46.313985"], ["updated_at", "2021-01-13 18:31:46.313985"], ["school", ""], ["major", "Art History"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:31:46 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.5ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:32:20 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Anfisa", "last_name"=>"Colt", "email_address"=>"anfisa@fiu.edu", "major"=>"Professional Writing"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Anfisa"], ["last_name", "Colt"], ["email_address", "anfisa@fiu.edu"], ["created_at", "2021-01-13 18:32:20.307901"], ["updated_at", "2021-01-13 18:32:20.307901"], ["school", ""], ["major", "Professional Writing"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:32:20 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.9ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:32:57 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Lamelo", "last_name"=>"Ball", "email_address"=>"lamelo@duke.edu", "major"=>"French"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lamelo"], ["last_name", "Ball"], ["email_address", "lamelo@duke.edu"], ["created_at", "2021-01-13 18:32:57.165460"], ["updated_at", "2021-01-13 18:32:57.165460"], ["school", ""], ["major", "French"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:32:57 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.7ms)
+Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/students" for ::1 at 2021-01-13 13:34:02 -0500
+Processing by Api::StudentsController#create as JSON
+  Parameters: {"student"=>{"school"=>"", "first_name"=>"Grace", "last_name"=>"Snyder", "email_address"=>"grace@pennstate.edu", "major"=>"Marketing Research"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[36mStudent Create (0.6ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "email_address", "created_at", "updated_at", "school", "major") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Grace"], ["last_name", "Snyder"], ["email_address", "grace@pennstate.edu"], ["created_at", "2021-01-13 18:34:02.867495"], ["updated_at", "2021-01-13 18:34:02.867495"], ["school", ""], ["major", "Marketing Research"]]
+  ↳ app/controllers/api/students_controller.rb:13
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/students_controller.rb:13
+Redirected to http://localhost:3000root_url
+Completed 200 OK in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:34:02 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.7ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:34:46 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.6ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:34:58 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.7ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:35:02 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (1.7ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:35:07 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.0ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 13:35:08 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (2.2ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2021-01-13 16:08:17 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/don/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 968ms (Views: 962.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/students" for ::1 at 2021-01-13 16:08:22 -0500
+Processing by Api::StudentsController#index as JSON
+  Rendering api/students/index.json.jbuilder
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/api/students/index.json.jbuilder:1
+  Rendered api/students/index.json.jbuilder (11.9ms)
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 1.0ms)
+
+
